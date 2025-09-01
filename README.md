@@ -1,5 +1,5 @@
 
-# Accenture Pre-boarding Training Prep Guide
+# Accenture Pre-boarding Training primers solutions
 
 This repository contains a **sample of solved Q&A** for Accenture pre-boarding training modules.
 
