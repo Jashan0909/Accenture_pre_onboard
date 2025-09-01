@@ -1,0 +1,11 @@
+create table venue_master ( 
+venue_id varchar(10) primary key, 
+event_id varchar(10), 
+venue_name varchar(30), 
+location varchar(50), 
+venue_cost int, 
+food varchar(10), 
+capacity int, 
+wifi varchar(10), 
+description varchar(50), 
+foreign key (event_id) references event_master(event_id) );
