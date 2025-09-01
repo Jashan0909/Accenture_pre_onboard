@@ -1,0 +1,26 @@
+//Don't change or delete the try/catch block
+
+function displayStrikeRate() {
+    try {
+        var name = document.getElementById("name").value;
+        var runs = Number(document.getElementById("runs").value);
+        var balls = Number(document.getElementById("balls").value);
+        
+        // Check if balls is zero to avoid division by zero
+        if (balls === 0) {
+            throw new Error("Balls faced cannot be zero");
+        }
+        
+        var strikeRate = (runs / balls) * 100;
+        strikeRate = strikeRate.toFixed(2);
+        
+        var result = "Name: " + name + "<br>" + 
+                     "Runs Scored: " + runs + "<br>" +
+                     "Balls Faced: " + balls + "<br>" +
+                     "Strike Rate: " + strikeRate;
+        
+        document.getElementById("result").innerHTML = result;
+    } catch(err) {
+        document.getElementById("result").innerHTML = "Error: " + err.message;
+    }
+}
