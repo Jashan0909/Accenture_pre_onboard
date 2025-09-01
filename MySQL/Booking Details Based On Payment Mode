@@ -1,0 +1,5 @@
+select booking_id,
+ enquiry_id, 
+total_amount from booking_master 2 
+where mode_of_pay in ('cash', 'credit') 
+order by enquiry_id asc;
