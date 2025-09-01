@@ -1,0 +1,10 @@
+create table customer_master ( 
+cust_id varchar(10) primary key,
+ c_first_name varchar(30), 
+c_middle_name varchar(30), 
+c_last_name varchar(30), 
+gender varchar(10),
+ street varchar(30), 
+city varchar(30), 
+phoneno varchar(20),
+ email varchar(30) );
