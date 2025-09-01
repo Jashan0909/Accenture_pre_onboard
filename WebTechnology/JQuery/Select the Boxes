@@ -1,0 +1,22 @@
+//WRITE YOUR JQUERY CODE HERE
+function updateCheckboxStatus() {
+    var count = $("input[type='checkbox']:checked").length;
+    var message = "";
+    
+    if (count == 1) {
+        message = count + " box is checked";
+    } else {
+        message = count + " boxes are checked";
+    }
+    
+    $("#result").html(message);
+}
+
+$(document).ready(function() {
+    $("input[type='checkbox']").on("change", function() {
+        updateCheckboxStatus();
+    });
+    
+    // Initial call to set the status on page load
+    updateCheckboxStatus();
+});
